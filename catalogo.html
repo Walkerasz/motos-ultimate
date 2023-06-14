@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de productos</title>
+
+    <!-- Agregar los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Cargar el estilo personalizado -->
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+
+<body>
+
+    <!-- Logo de Whatsapp -->
+    <div id="contactoWhatsapp">
+        <a target="_blank" href="https://wa.me/51964838513?text=Hola,Estoy listo para la velocidad">
+            <img src="assets/WhatsApp.svg" alt="Contacto por Whatsapp">
+        </a>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Motor !W!</h1> <!-- Titulo 1 -->
+        <h2>Seguridad, calidad , garantía y velocidad</h2> <!-- Titulo 2 -->
+    </header>
+
+    <!-- Barra de menú -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Motor !W!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form-new-user.html">Registrate</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                        data-bs-target="#carritoModal">Carrito</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal Carrito -->
+    <div class="modal fade" id="carritoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compra</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carrito">
+                        <img id="carritoVacio" class="img-fluid mx-auto d-block" src="assets/carrito-vacio.jpg" alt="Carrito Vacio">
+                        <figcaption class="text-center">Actualmente usted no cuenta con ningún producto.</figcaption>    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary disabled">Cotizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parte principal -->
+    <main class="pageCatalogo container">
+
+        <!-- Sección de catalogo -->
+
+        <section class="row" id="catalogo">
+        
+             <!-- Moto 1 -->
+             <article class="col-8 col-md-4 col-lg-3">
+                <img class="imgProduct" src="assets/Imagenes/moto1.jpg" alt="yamaha r1"> 
+                <h3>Yamaha R1</h3>
+                <p>
+                        <span class="precioOriginal">$ 25999.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">$ 12999.5
+                    </span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </article>
+            <!--Moto 2-->
+            <article class="col-8 col-md-4 col-lg-3">
+                <img class="imgProduct" src="assets/Imagenes/moto2.jpg" alt="Ducati"> 
+                <h3>Ducati</h3>
+                <p>
+                        <span class="precioOriginal">$ 25999.00</span> <span class="precioDescuento">-5%</span>
+                    <br><span class="precioFinal">$ 24,699.05
+                    </span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </article>
+            <!--moto 3 -->
+        
+            <article class="col-8 col-md-4 col-lg-3">
+                    <img class="imgProduct" src="assets/Imagenes/moto3.jpg" alt="Style bobber"> 
+                    <h3>Style bobber</h3>
+                    <p>
+                        <span class="precioOriginal">$ 25999.00</span> <span class="precioDescuento">-15%</span>
+                    <br><span class="precioFinal">$ 22,099.15
+                    </span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </article>
+            <!--Moto 4-->
+            <article class="col-8 col-md-4 col-lg-3">
+                <img class="imgProduct" src="assets/Imagenes/moto4.jpg" alt="harley davidson"> 
+                <h3>Harley davidson 1100cc</h3>
+                <p>
+                        <span class="precioOriginal">$ 25999.00</span> <span class="precioDescuento">-0%</span>
+                    <br><span class="precioFinal">$ 25999.00
+                    </span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </article>
+           <!--Moto 5-->
+           <article class="col-8 col-md-4 col-lg-3">
+            <img class="imgProduct" src="assets/Imagenes/moto5.jpg" alt="indian "> 
+            <h3>Indian 750cc</h3>
+            <p>
+                        <span class="precioOriginal">$ 25999.00</span> <span class="precioDescuento">-10%</span>
+                    <br><span class="precioFinal">$ 23399.1
+                    </span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </article>
+           <!--Moto 6-->
+           <article class="col-8 col-md-4 col-lg-3">
+            <img class="imgProduct" src="assets/Imagenes/moto6.jpg" alt="bmw "> 
+            <h3>BMW 350</h3>
+            <p>
+                        <span class="precioOriginal">$ 15999.00</span> <span class="precioDescuento">-11%</span>
+                    <br><span class="precioFinal">$ 14239.11
+                    </span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </article>
+             <!--Moto 7-->
+             <article class="col-8 col-md-4 col-lg-3">
+            <img class="imgProduct" src="assets/Imagenes/moto7.jpg" alt="KTM"> 
+            <h3>KTM 300</h3>
+            <p>
+                        <span class="precioOriginal">$ 10000.00</span> <span class="precioDescuento">-25%</span>
+                    <br><span class="precioFinal">$ 7500.00
+                    </span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </article>
+                 <!--Moto 8-->
+                 <article class="col-8 col-md-4 col-lg-3">
+            <img class="imgProduct" src="assets/Imagenes/moto8.jpg" alt="Susuki"> 
+            <h3>Susuki GXSR</h3>
+            <p>
+                        <span class="precioOriginal">$ 10000.00</span> <span class="precioDescuento">-50%</span>
+                    <br><span class="precioFinal">$ 7500.00
+                    </span>
+                </p>
+                <button class="btn btn-primary">Agregar al carrito</button>
+            </article>
+        </section>
+    </main>
+ <!-- Pie de página -->
+ <footer>
+    Diseñado para correr sin limites 
+</footer>
+
+<!-- Código Javascript Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Cargar Javascript del proyecto -->
+<script src="main.js"></script>
+
+</html>
